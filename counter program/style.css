@@ -1,22 +1,29 @@
-
-
-#h1{
+#h1 {
     display: block;
     text-align: center;
     font-size: 10em;
     font-family: helvetica;
 }
 
-#mainDiv{
+#mainDiv {
     text-align: center;
 }
-.bttons{
+
+.bttons {
     padding: 10px 20px;
     border-radius: 5px;
     color: white;
     background-color: blue;
     cursor: pointer;
-    transition: background-color 0.25s ;
+    transition: background-color 0.25s;
 }
+
 .bttons:hover {
     background-color: hsl(214, 100%, 56%);
+}
+#lab{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: helvetica;
+}
