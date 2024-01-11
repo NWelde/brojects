@@ -1,0 +1,28 @@
+#myLabel {
+    text-align: center;
+    font-size: 5em;
+    font-family: "Times New Roman";
+}
+
+#mySubmit {
+    text-align: center;
+    color: white;
+    background-color: aqua;
+    transition: background-color 1.5s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#mySubmit:hover {
+    background-color: blue;
+}
+
+#NumToBeTested {
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#result {
+    text-align: center;
+}
