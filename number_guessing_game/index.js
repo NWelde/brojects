@@ -1,29 +1,41 @@
 const min = 1;
-const max = 100;  // Declare max and min first
+const max = 100;
+const numTries = 5; 
 
-const guess = document.getElementById("GuessedNum").value;
+const guess = document.getElementById("GuessedNum");
 const submit = document.getElementById("submit");
 const correctOrWrong = document.getElementById("correctOrWrong");
-const Num = Math.floor(Math.random() * max + min);  // Now max is available
+let triesLeft = numTries;
+let num = Math.floor(Math.random() * max + min);
 
+submit.onclick = function() {
+    while (triesLeft > 0) {
+        let difference = Math.abs(guess.value - num);
 
-submit.onclick = function(){
-    let diffrence = Math.abs(guess - Num);
-    if (diffrence === 0){
-        correctOrWrong.textContent = "Congratulations! you the number  correctly "
+        if (difference === 0) {
+            correctOrWrong.textContent = "Congratulations! You guessed the number correctly!";
+            break; // Exit the loop if the guess is correct
+        } else {
+            correctOrWrong.textContent = provideFeedback(difference);
+            triesLeft--;
+            guess.value = "";
+            if (triesLeft === 0) {
+                correctOrWrong.textContent += " You're out of tries! The number was " + num;
+            }
+        }
     }
-    else if(diffrence === 10){
-        correctOrWrong.textContent = "HOT!";
-    }
-    else if(diffrence === 15){
-        correctOrWrong.textContent = "WARMER! ";
+};
 
+function provideFeedback(difference) {
+    if (difference <= 10) {
+        return "HOT!";
+    } else if (difference <= 15) {
+        return "WARMER!";
+    } else if (difference <= 20) {
+        return "WARM!";
+    } else if (difference <= 25) {
+        return "COLD!";
+    } else {
+        return "TOO COLD!";
     }
-    else if(diffrence === 20){
-        correctOrWrong.textContent = "WARM! ";
-    }
-    else if(diffrence === 25 )
-    correctOrWrong.textContent = "COLD! ";
-     else if(diffrence > 25)
-     correctOrWrong.textContent = "TO COLD! ";
 }
