@@ -1,9 +1,10 @@
+const min = 1;
+const max = 100;  // Declare max and min first
+
 const guess = document.getElementById("GuessedNum").value;
 const submit = document.getElementById("submit");
 const correctOrWrong = document.getElementById("correctOrWrong");
-const Num = Math.floor(Math.random()*max + min);
-const min = 1;
-const max = 100;
+const Num = Math.floor(Math.random() * max + min);  // Now max is available
 
 
 submit.onclick = function(){
