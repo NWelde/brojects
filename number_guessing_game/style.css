@@ -1,0 +1,19 @@
+#submit{
+    display: block;
+    width: 200px;
+    height: 25px;
+    margin: auto;
+    background-color: aquamarine;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+    transform: background-color  2s  ;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+.center{
+    display: block;
+    margin: auto;
+}
