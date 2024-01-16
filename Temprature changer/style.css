@@ -1,0 +1,26 @@
+/* Style the main container */
+div {
+    width: 210px; /* Adjust width as needed */
+    margin: auto;
+    display: block;
+    border: outset;
+  }
+  
+  /* Style the submit button */
+  #submit {
+    color: white;
+    background-color: rgb(57, 57, 161);
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  #submit:hover {
+    background-color: red;
+  }
+  
+  /* Make sure the feedback paragraph is visible */
+  #feedBack {
+    display: block; /* Ensure visibility */
+    margin-top: 10px; /* Add some spacing */
+  }
