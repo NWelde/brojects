@@ -1,0 +1,66 @@
+.appContainer {
+    padding: 20px;
+    background-color: #f0f2f5;
+    min-height: 100vh; /* Make sure your app fills the whole viewport height */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Navigation Styles */
+  .nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .nav a:hover {
+    color: #4CAF50; /* Change hover color */
+  }
+  
+  /* Main Content Styles */
+  .main {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add some shadow to your main content */
+    border-radius: 8px; /* Optional: rounds the corners */
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: auto; /* Pushes the footer to the bottom */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+    }
+  
+    .main {
+      margin-top: 10px;
+    }
+  }
+  @media (max-width: 768px) {
+    .nav {
+      justify-content: center; /* Center items on smaller screens */
+    }
+  
+    .navLink, .nav a {
+      margin: 10px 5px; /* Adjust spacing for smaller screens */
+    }
+  }

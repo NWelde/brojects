@@ -1,0 +1,26 @@
+.navbarDark {
+  background-color: #343a40 !important; /* Bootstrap dark background color */
+  color: #ffffff !important; /* Light text color for contrast */
+}
+  
+  .navLink {
+    color: #007bff !important; /* Bootstrap primary color for links */
+    margin-right: 15px;
+  }
+  
+
+
+  .navLink:hover {
+    color: #ff4500; /* Or any color you prefer */
+  }
+  .navLink:hover {
+    color: #fff; /* Text color */
+    background-color: #ff0000; /* Background color */
+    border-radius: 5px; /* Optional: adds rounded corners */
+  }
+
+  .navLogo {
+    height: 50px; /* Adjust the size as needed */
+    width: auto;
+    margin-right: 15px; /* Add some space between the logo and the next item */
+  }

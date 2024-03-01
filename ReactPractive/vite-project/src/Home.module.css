@@ -1,0 +1,7 @@
+.homeBackground {
+    background-image: url('../assets/images/home-background.jpg'); /* Adjust the path as needed */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Make sure it covers the full viewport height */
+    width: 100%; /* Cover the full width */
+  }
